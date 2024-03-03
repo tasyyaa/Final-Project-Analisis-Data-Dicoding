@@ -63,7 +63,7 @@ for column in datetime_columns:
 min_date = all_df["dteday"].min()
 max_date = all_df["dteday"].max()
 with st.sidebar:
-    st.image("Bike Sharing.png", use_column_width=True)
+    st.image("dashboard/Bike Sharing.png", use_column_width=True)
     start_date, end_date = st.date_input(
         label='Tanggal Peminjaman',
         min_value=min_date,
