@@ -10,7 +10,7 @@ def create_monthly_data(df):
     return monthly_data
 
 def create_total_sewa(df):
-    df['yr'] = df['yr_x'].replace({0: '2011', 1: '2012'})
+    df['yr_x'] = df['yr_x_x'].replace({0: '2011', 1: '2012'})
     total_sewa = df.groupby(by="yr_x").cnt_x.sum()
     return total_sewa
 
